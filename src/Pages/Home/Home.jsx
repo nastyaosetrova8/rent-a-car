@@ -6,8 +6,10 @@ import {
   StyledContainer,
   HomeStyled,
   ImgHomeWrapper,
+  ButtonGoStyled,
 } from './Home.styled';
 import homeImg from '../../img/homeImg.jpg' 
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
             <TextStyled>
             Our user-friendly online booking platform allows you to reserve your desired vehicle in just a few clicks.
             </TextStyled>
+            <Link to="/catalog"> <ButtonGoStyled type='button'>Go</ButtonGoStyled></Link>
           </HomeTitleWrapStyled>
         </HomeStyled>
       </PagesStyled>

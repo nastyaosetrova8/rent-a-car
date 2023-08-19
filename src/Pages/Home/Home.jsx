@@ -10,6 +10,9 @@ import {
 } from './Home.styled';
 import homeImg from '../../img/homeImg.jpg' 
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 export default function Home() {
   return (
@@ -20,7 +23,7 @@ export default function Home() {
             <HomeTitleStyled>
               Welcome to AllAccess Auto Your Premier Car Rental Solution
             </HomeTitleStyled>
-            <ImgHomeWrapper>
+            <ImgHomeWrapper start data-aos="fade-right" data-aos-duration="3000">
             <img src={homeImg} alt='car' />
             </ImgHomeWrapper>
             <TextStyled>

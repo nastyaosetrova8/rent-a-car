@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import bgImg from '../../img/Car.jpg';
+import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   max-width: 1280px;
@@ -9,7 +8,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const PagesStyled = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -18,11 +17,11 @@ display: flex;
 export const HomeStyled = styled.div`
   margin-top: 0;
   width: 100%;
-min-height: 100vh;
-background-repeat: no-repeat;
+  min-height: 100vh;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(${bgImg});
+  background-color: #030a57;
 `;
 
 export const HomeTitleWrapStyled = styled.div`
@@ -32,22 +31,30 @@ export const HomeTitleWrapStyled = styled.div`
   justify-content: center;
   max-width: 600px;
   margin: 32px auto;
-text-align: center;
+  text-align: center;
 `;
 
 export const HomeTitleStyled = styled.h1`
-font-family: 'Roboto';
+  font-family: 'Roboto';
   font-size: 46px;
   font-weight: 700;
   line-height: 1.3;
   color: #ffffff;
-  margin-bottom: 300px;
+  margin-bottom: 64px;
+`;
+
+export const ImgHomeWrapper = styled.div`
+  max-width: 600px;
+  margin-bottom: 24px;
+
+  & img {
+    width: 100%;
+  }
 `;
 
 export const TextStyled = styled.p`
-font-weight: 400;
+  font-weight: 400;
   font-size: 30px;
   line-height: 1.2;
   color: #d3d3f5;
 `;
-
